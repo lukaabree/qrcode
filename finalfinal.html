@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Freshness Overview</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: green;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+    .temperature-graph {
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✅ Fresh & Safe</h1>
+
+    <div class="section">
+      <div class="section-title">Product Information:</div>
+      <p><strong>Product:</strong> Chicken Breast Fillet</p>
+      <p><strong>Serial Number:</strong> SN-458726-TIR</p>
+      <p><strong>Origin:</strong> Perutnina Farm, Ptuj, Slovenia</p>
+      <p><strong>Destination:</strong> Tirana, Albania</p>
+      <p><strong>Shipment Date:</strong> 24 April 2025, 10:15 AM</p>
+      <p><strong>Delivery Date:</strong> 26 April 2025, 11:30 AM</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Grafiku i Temperaturës:</div>
+      <img class="temperature-graph" src="grafiku_albanian_me_i_ulte.png" alt="Grafiku i Temperaturës">
+    </div>
+
+    <div class="section">
+      <div class="section-title">Temperature Log (Every 30 Minutes):</div>
+      <table>
+        <tr>
+          <th>Time</th>
+          <th>Temperature (°C)</th>
+          <th>Location</th>
+        </tr>
+        <tr><td>24 Apr 10:30 AM</td><td>3.6°C</td><td>Ptuj</td></tr>
+        <tr><td>24 Apr 11:00 AM</td><td>3.6°C</td><td>Ptuj</td></tr>
+        <tr><td>24 Apr 11:30 AM</td><td>3.7°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 12:00 PM</td><td>3.8°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 12:30 PM</td><td>3.7°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 1:00 PM</td><td>3.6°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 1:30 PM</td><td>3.7°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 2:00 PM</td><td>3.8°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 2:30 PM</td><td>3.7°C</td><td>Border Slovenia</td></tr>
+        <tr><td>24 Apr 3:00 PM</td><td>3.6°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 3:30 PM</td><td>3.7°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 4:00 PM</td><td>3.8°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 4:30 PM</td><td>3.8°C</td><td>Border Albania</td></tr>
+        <tr><td>24 Apr 5:00 PM</td><td>3.7°C</td><td>On Route</td></tr>
+        <tr><td>24 Apr 5:30 PM</td><td>3.7°C</td><td>Tirana Warehouse</td></tr>
+        <tr><td>24 Apr 6:00 PM</td><td>3.7°C</td><td>Tirana</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Shipment Status Summary:</div>
+      <p><strong>Max Temperature:</strong> 4.2°C</p>
+      <p><strong>Average Temperature:</strong> 4.0°C</p>
+      <p><strong>Status:</strong> No Cold Chain Breach Detected</p>
+    </div>
+
+    <div class="footer">
+      Të dhënat e mbledhura automatikisht çdo 30 minuta nga sensorët e temperaturës.
+    </div>
+  </div>
+</body>
+</html>
